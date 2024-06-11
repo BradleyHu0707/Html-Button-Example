@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function buttonClicked(buttonNumber) {
+  if(buttonNumber === 77) {
+    alert('correct!');
+  } else {
+    alert('wrong');
+  }
+}
+</script>
+</head>
+<body>
 
+<!-- Buttons will be generated here -->
+<script>
+for(let i = 1; i <= 100; i++) {
+  document.write('<button onclick="buttonClicked(' + i + ')">Button ' + i + '</button>');
+  if(i % 10 === 0) document.write('<br>'); // Break line after every 10 buttons
+}
+</script>
+
+</body>
+</html>
